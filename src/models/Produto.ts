@@ -5,5 +5,5 @@ export default interface Produto {
 	nome: string;
 	valor: number;
 	categoria: Categoria | null;
-	disponivel: boolean;
+	imagem: string;
 }

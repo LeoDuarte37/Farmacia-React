@@ -1,10 +1,11 @@
 import React from 'react';
 import './Home.css';
 import medical from '../../assets/medical.jpg';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
-    
+      <>
         <div className="bg-white">
           <div className="p-10 scroll-px-10 lg:px-8">
             <div className="relative isolate overflow-hidden bg-white px-6 pt-16 shadow-2xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
@@ -18,12 +19,10 @@ function Home() {
                   Precisa economizar e manter a saúde e cuidados em dia? Temos uma variedades de produtos e serviços, veja abaixo!
                 </p>
                 <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                  <a
-                    href="#"
-                    className="rounded-md bg-gray-600 shadow-lg shadow-gray-700/50 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                  >
-                    Ver produtos
-                  </a>
+                  <Link to="/listarCategorias"
+                    className="rounded-md bg-gray-600 shadow-lg shadow-gray-700/50 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                    Ver categorias
+                  </Link>
                 </div>
               </div>
               <div className="relative mt-16 h-80 lg:mt-8">
@@ -38,7 +37,7 @@ function Home() {
             </div>
           </div>
         </div>
-      
+      </>
     );
 }
 

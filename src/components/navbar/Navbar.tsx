@@ -10,8 +10,8 @@ function Navbar() {
                     <Link to='/home' className='text-2xl font-bold uppercase flex gap-2'>Farmácia <FirstAidKit size={32} weight="bold"/></Link>
                     
                     <div className='flex gap-4'>
-                        <Link to='/produtos' className='hover:underline'>Produtos</Link>
-                        <Link to='/categorias' className='hover:underline'>Categorias</Link>
+                        <Link to='/form-produto' className='hover:underline'>Cadastro Produto</Link>
+                        <Link to='/form-categoria' className='hover:underline'>Cadastro Categoria</Link>
                     </div>
                 </div>
             </div> 
