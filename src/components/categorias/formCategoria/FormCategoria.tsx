@@ -11,7 +11,7 @@ function FormularioCategoria() {
   const { id } = useParams<{ id: string }>();
 
   async function buscarPorId(id: string) {
-    await buscar(`/categorias/${id}`, setCategoria);
+    await buscar(`/categorias/id/${id}`, setCategoria);
   }
 
   useEffect(() => {
